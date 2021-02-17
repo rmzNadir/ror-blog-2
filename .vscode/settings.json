@@ -1,9 +1,16 @@
 {
-  "editor.defaultFormatter": "misogi.ruby-rubocop",
-  "editor.formatOnSave": true,
-  "ruby.rubocop.executePath": "",
+  "ruby.rubocop.executePath": "/home/nadir/.rbenv/shims/",
   "ruby.format": "rubocop",
+  "ruby.rubocop.onSave": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "editor.fontLigatures": true,
   "files.associations": {
     "*.erb": "erb"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
+  "emmet.includeLanguages": {
+    "erb": "html"
   }
 }
