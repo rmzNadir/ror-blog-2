@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "misogi.ruby-rubocop",
+  "editor.formatOnSave": true,
+  "ruby.rubocop.executePath": "",
+  "ruby.format": "rubocop",
+  "files.associations": {
+    "*.erb": "erb"
+  }
+}
