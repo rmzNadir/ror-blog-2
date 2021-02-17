@@ -5,6 +5,14 @@ class ArticlesController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    @article.update(title: params[:article][:title], content: params[:article][:content])
+    redirect_to(@article)
+  end
+
   def new
     @article = Article.new
   end
@@ -12,14 +20,6 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.create(title: params[:article][:title], content: params[:article][:content])
     render(json: @article)
-  end
-
-  def edit
-  end
-
-  def update
-    @article.update(title: params[:article][:title], content: params[:article][:content])
-    redirect_to(@article)
   end
 
   def destroy
