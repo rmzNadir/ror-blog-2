@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 class ArticlesController < ApplicationController
   before_action :find_article, except: [:new, :create, :index]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destory]
 
   def index
     @articles = Article.all
