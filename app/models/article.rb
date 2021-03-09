@@ -7,10 +7,8 @@ class Article < ApplicationRecord
   attr_accessor :category_elements
 
   def save_categories
-    # category_elements: 1,2,3
-    categories_array = category_elements.split(",")
-
-    categories_array.each do |category_id|
+    # category_elements: [1,2,3]
+    category_elements.each do |category_id|
       HasCategory.find_or_create_by(article: self, category_id: category_id)
     end
   end
