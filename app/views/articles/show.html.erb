@@ -3,7 +3,7 @@
     <%= @article.title %>
   </h1>
   <div>
-    Escrito por: <strong><%= @article.user.email %></strong>
+    Escrito por:   <%= image_tag url_for(current_user.avatar), height: 30%> <strong><%= @article.user.email %></strong>
   </div>
   <div>
     <%= @article.content %>
